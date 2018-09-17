@@ -27,7 +27,7 @@ app.set('view engine', '.hbs');
 let port = process.env.PORT || 8080; 
 
 app.use('/', routes);
-mongoose.connect('mongodb://localhost/ingredients');
+mongoose.connect('mongodb://test:test123@ds123312.mlab.com:23312/menulist');
 
 app.listen(port);
 console.log('Server listening on port ' + port)
